@@ -1,0 +1,231 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengumuman Penerimaan Mahasiswa Baru - Universitas Supernova</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #4caf50, #00bcd4);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        header h1 {
+            font-size: 40px;
+            color: #ff9800;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px;
+            height: auto;
+        }
+        h2 {
+            color: #ff9800;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .btn {
+            background-color: #ff9800;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #f57c00;
+        }
+        .universitas-info {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .result {
+            display: none;
+            font-size: 24px;
+            font-weight: bold;
+            color: #4caf50;
+            margin-top: 30px;
+        }
+        .result.rejected {
+            color: #f44336;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            border: 2px solid #ff9800;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ff9800;
+        }
+        th {
+            background-color: #ff9800;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #333;
+        }
+        tr:nth-child(odd) {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="logo.png" alt="Universitas Supernova Logo" class="logo">
+        <h1>Universitas Supernova</h1>
+        <p>Selamat datang di Universitas Supernova! Cek pengumuman hasil penerimaan mahasiswa baru di bawah ini.</p>
+    </header>
+
+    <!-- Profil Universitas -->
+    <section>
+        <button class="btn" onclick="toggleProfile()">Lihat Profil Universitas</button>
+
+        <div class="universitas-info">
+            <h2>Profil Universitas Supernova</h2>
+            <p><strong>Sejarah Universitas Supernova:</strong><br>
+            Universitas Supernova didirikan pada tahun 2005 dengan tujuan untuk menjadi pusat pendidikan yang menghasilkan pemimpin-pemimpin masa depan. Berdiri di tengah perkembangan teknologi dan globalisasi, universitas ini terus berkomitmen untuk menghadirkan pendidikan berkualitas tinggi yang dapat diakses oleh semua kalangan.</p>
+
+            <p><strong>Visi:</strong><br>
+            Menjadi universitas terkemuka yang mengutamakan inovasi, integritas, dan kontribusi terhadap kemajuan masyarakat global.</p>
+
+            <p><strong>Misi:</strong><br>
+            - Memberikan pendidikan yang berkualitas dan relevan dengan perkembangan zaman.<br>
+            - Mempersiapkan mahasiswa dengan keterampilan dan pengetahuan yang dibutuhkan untuk sukses di dunia profesional.<br>
+            - Mengembangkan riset dan inovasi yang dapat memberikan dampak positif bagi masyarakat.</p>
+
+            <p><strong>Fasilitas:</strong><br>
+            - Laboratorium dan ruang kelas yang dilengkapi dengan teknologi canggih.<br>
+            - Perpustakaan dengan koleksi buku dan jurnal internasional.<br>
+            - Fasilitas olahraga dan ruang rekreasi untuk mendukung keseimbangan hidup mahasiswa.<br>
+            - Akses jaringan internet cepat dan pusat teknologi untuk mendukung kegiatan akademis.</p>
+        </div>
+    </section>
+
+    <!-- Daftar Mahasiswa yang Diterima dan Tidak Diterima -->
+    <section>
+        <h2>Daftar Mahasiswa yang Diterima dan Tidak Diterima</h2>
+
+        <!-- Tabel Mahasiswa Diterima -->
+        <h3>Mahasiswa Diterima</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Nama Mahasiswa</th>
+                    <th>Jurusan</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Joyce Alysa Tanasa</td>
+                    <td>Teknik Informatika</td>
+                    <td style="color: #4caf50;">Diterima</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Andreas Putra</td>
+                    <td>Manajemen Bisnis</td>
+                    <td style="color: #4caf50;">Diterima</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Fikri Alamsyah</td>
+                    <td>Sistem Informasi</td>
+                    <td style="color: #4caf50;">Diterima</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Tabel Mahasiswa Tidak Diterima -->
+        <h3>Mahasiswa Tidak Diterima</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Nama Mahasiswa</th>
+                    <th>Jurusan</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Rina Siti</td>
+                    <td>Desain Komunikasi Visual</td>
+                    <td style="color: #f44336;">Tidak Diterima</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Melati Putri</td>
+                    <td>Ilmu Hukum</td>
+                    <td style="color: #f44336;">Tidak Diterima</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Hasil Penerimaan -->
+    <section class="penerimaan-info">
+        <h2>Hasil Penerimaan Mahasiswa Baru</h2>
+        <p>Selamat, Anda telah melangkah menuju tahapan baru dalam kehidupan akademis. Klik tombol di bawah untuk mengetahui hasil penerimaan Anda di Universitas Supernova.</p>
+        <button class="btn" onclick="showResult()">Cek Hasil Penerimaan</button>
+
+        <div class="result" id="result">
+            <p>Selamat, Joyce Alysa Tanasa! Anda diterima di Universitas Supernova untuk jurusan <strong>Teknik Informatika</strong>.</p>
+            <p>Anda telah membuktikan bahwa Anda memiliki potensi yang luar biasa! Kami sangat senang menyambut Anda sebagai bagian dari keluarga besar Universitas Supernova. Persiapkan diri Anda untuk memulai perjalanan akademis yang penuh dengan tantangan, peluang, dan prestasi. Ayo, mulai perjalanan Anda sekarang!</p>
+        </div>
+    </section>
+</div>
+
+<script>
+    function toggleProfile() {
+        const profileSection = document.querySelector('.universitas-info');
+        if (profileSection.style.display === 'none') {
+            profileSection.style.display = 'block';
+        } else {
+            profileSection.style.display = 'none';
+        }
+    }
+
+    function showResult() {
+        const result = document.getElementById('result');
+        result.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
